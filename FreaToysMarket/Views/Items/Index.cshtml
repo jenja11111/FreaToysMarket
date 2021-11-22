@@ -1,0 +1,14 @@
+﻿@model Item
+
+<h1 align="center">@Model.name</h1>
+<div class="row mt-5 mb-2">
+    @{
+        <div align="center">
+            <img class="img-thumbnail" src="@Model.img" alt="@Model.name" />
+            <p>@Model.shortDesc</p>
+            <p>@Model.longDesc</p>
+            <p>Цена: @Model.price.ToString("c") </p>
+            <p><a class="btn btn-warning" asp-controller="Home" asp-action="Index">Вернутся на главную</a>
+        </div>
+    }
+</div>
